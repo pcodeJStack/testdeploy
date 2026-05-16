@@ -44,7 +44,7 @@ pipeline {
         stage('Deploy to VPS') {
             steps {
                 sh '''
-                ssh root@168.144.139.227 "
+                ssh -i ~/.ssh/id_rsa_jenkins root@168.144.139.227 "
                 docker pull phucitdev/be-pickleball:latest &&
                 docker stop pickleball-be || true &&
                 docker rm pickleball-be || true &&
