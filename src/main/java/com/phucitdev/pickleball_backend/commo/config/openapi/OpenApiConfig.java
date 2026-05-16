@@ -15,7 +15,7 @@ public class OpenApiConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .servers(List.of(
-                        new Server().url("https://crm.singles")
+                        new Server().url("https://demo.christmas")
                 ));
     }
 }
