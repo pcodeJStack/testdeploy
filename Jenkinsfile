@@ -9,7 +9,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/pcodeJStack/pickleballDashboardManagementBE.git'
+                git branch: 'main', url: 'https://github.com/pcodeJStack/testdeploy.git'
             }
         }
 
